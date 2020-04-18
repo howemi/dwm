@@ -1,0 +1,746 @@
+In file included from dwm.c:287:
+config.h:60:1: error: unknown type name ‘define’
+ define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
+ ^~~~~~
+config.h: In function ‘SHCMD’:
+config.h:60:8: warning: type of ‘cmd’ defaults to ‘int’ [-Wimplicit-int]
+ define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
+        ^~~~~
+config.h:60:21: error: expected expression before ‘.’ token
+ define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
+                     ^
+config.h:60:71: error: expected ‘;’ before ‘}’ token
+ define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
+                                                                       ^~
+                                                                       ;
+In file included from dwm.c:287:
+config.h: At top level:
+config.h:72:51: error: initializer element is not constant
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   ^~~~~
+config.h:72:51: note: (near initialization for ‘keys[2].arg.i’)
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+config.h:68:21: warning: missing braces around initializer [-Wmissing-braces]
+ static Key keys[] = {
+                     ^
+config.h:72:51:
+  { MODKEY,               XK_w,    spawn,          SHCMD("$BROWSER") },
+                                                   {                 }
+In file included from dwm.c:287:
+config.h: In function ‘SHCMD’:
+config.h:60:21: warning: control reaches end of non-void function [-Wreturn-type]
+ define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
+                     ^
+At top level:
+dwm.c:1614:1: warning: ‘incrivgaps’ defined but not used [-Wunused-function]
+ incrivgaps(const Arg *arg)
+ ^~~~~~~~~~
+dwm.c:1603:1: warning: ‘incrihgaps’ defined but not used [-Wunused-function]
+ incrihgaps(const Arg *arg)
+ ^~~~~~~~~~
+dwm.c:1592:1: warning: ‘incrovgaps’ defined but not used [-Wunused-function]
+ incrovgaps(const Arg *arg)
+ ^~~~~~~~~~
+dwm.c:1581:1: warning: ‘incrohgaps’ defined but not used [-Wunused-function]
+ incrohgaps(const Arg *arg)
+ ^~~~~~~~~~
+dwm.c:1570:1: warning: ‘incrogaps’ defined but not used [-Wunused-function]
+ incrogaps(const Arg *arg)
+ ^~~~~~~~~
+dwm.c:1559:1: warning: ‘incrigaps’ defined but not used [-Wunused-function]
+ incrigaps(const Arg *arg)
+ ^~~~~~~~~
+dwm.c:1542:1: warning: ‘defaultgaps’ defined but not used [-Wunused-function]
+ defaultgaps(const Arg *arg)
+ ^~~~~~~~~~~
+dwm.c:1535:1: warning: ‘togglegaps’ defined but not used [-Wunused-function]
+ togglegaps(const Arg *arg)
+ ^~~~~~~~~~
+In file included from dwm.c:287:
+config.h:66:20: warning: ‘browsercmd’ defined but not used [-Wunused-variable]
+ static const char *browsercmd[]  = { "st", NULL };
+                    ^~~~~~~~~~
+make: *** [Makefile:18: dwm.o] Error 1
