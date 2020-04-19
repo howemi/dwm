@@ -120,7 +120,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
-	{ MODKEY,             		XK_Escape, spawn,	   SHCMD("slock") },
+	{ MODKEY,             		XK_Escape, spawn,	   SHCMD("slock & xset dpms force off") },
 
 	{ 0, XF86XK_AudioMute,      	spawn,	   SHCMD("amixer -q sset Master toggle") },
 	{ 0, XF86XK_AudioLowerVolume,  	spawn,	   SHCMD("amixer -q sset Master 5%-") },
