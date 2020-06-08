@@ -107,6 +107,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	STACKKEYS(MODKEY,                          focus)
 	STACKKEYS(MODKEY|ShiftMask,                push)
+	{ MODKEY,    		            XK_r,	   spawn,          SHCMD("st -e ranger") },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
 	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
@@ -153,6 +154,8 @@ static Key keys[] = {
 	{ 0, XF86XK_AudioMute,      	spawn,	   SHCMD("amixer -q sset Master toggle") },
 	{ 0, XF86XK_AudioLowerVolume,  	spawn,	   SHCMD("amixer -q sset Master 5%-") },
 	{ 0, XF86XK_AudioRaiseVolume,  	spawn,	   SHCMD("amixer -q sset Master 5%+") },
+	{ 0, XF86XK_MonBrightnessUp,  	spawn,	   SHCMD("sudo brightnessctl -d 'intel_backlight' set 5%+") },
+	{ 0, XF86XK_MonBrightnessDown, 	spawn,	   SHCMD("sudo brightnessctl -d 'intel_backlight' set 5%-") },
 	{ 0, XF86XK_Eject,  		    spawn,	   SHCMD("setaudio") },
 };
 
@@ -160,12 +163,12 @@ static Key keys[] = {
 /* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
 static Button buttons[] = {
 	/* click                event mask      button          function        argument */
-	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
-	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
 	{ ClkWinTitle,          0,              Button2,        zoom,           {0} },
 	{ ClkStatusText,        0,              Button1,        sigdwmblocks,   {.i = 1} },
 	{ ClkStatusText,        0,              Button2,        sigdwmblocks,   {.i = 2} },
 	{ ClkStatusText,        0,              Button3,        sigdwmblocks,   {.i = 3} },
+	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
+	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
 	{ ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
 	{ ClkClientWin,         MODKEY,         Button2,        togglefloating, {0} },
 	{ ClkClientWin,         MODKEY,         Button3,        resizemouse,    {0} },
