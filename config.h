@@ -51,6 +51,8 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   isterminal noswallow monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           0,         0,        -1 },
 	{ "St",       NULL,       NULL,       0,            0,           1,         1,        -1 },
+	{ NULL,		  "spterm",	  NULL,		SPTAG(0),		1,			 1,         0,        -1 },
+	{ NULL,		  "spfm",	  NULL,		SPTAG(1),		1,			 1,         0,        -1 },
 	{ NULL,       NULL,   "Event Tester", 0,            0,           0,         1,        -1 },
 };
 
@@ -91,22 +93,36 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbordercolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char scratchpadname[] = "scratchpad";
-static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
+typedef struct {
+	const char *name;
+	const void *cmd;
+} Sp;
+const char *spcmd1[] = {"st", "-n", "spterm", "-g", "120x34", NULL };
+const char *spcmd2[] = {"st", "-n", "spfm", "-g", "144x41", "-e", "ranger", NULL };
+static Sp scratchpads[] = {
+	/* name          cmd  */
+	{"spterm",      spcmd1},
+	{"spranger",    spcmd2},
+};
+
 
 #include <X11/XF86keysym.h>
+
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,             		    XK_backslash, spawn,          {.v = termcmd } },
-	{ MODKEY|ShiftMask,   		    XK_backslash, togglescratch,  {.v = scratchpadcmd } },
+	/* { MODKEY|ShiftMask,   		    XK_backslash, togglescratch,  {.v = scratchpadcmd } }, */
+	{ MODKEY|ShiftMask,    			XK_backslash,  	   togglescratch,  {.ui = 0 } },
+	{ MODKEY,            			XK_apostrophe,	   togglescratch,  {.ui = 1 } },
 	{ MODKEY,             		    XK_w,	   spawn,          SHCMD("$BROWSER") },
 	{ MODKEY|ShiftMask,    		    XK_w,	   spawn,          SHCMD("st -e sudo nmtui") },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	STACKKEYS(MODKEY,                          focus)
 	STACKKEYS(MODKEY|ShiftMask,                push)
 	{ MODKEY,    		            XK_r,	   spawn,          SHCMD("st -e ranger") },
+	{ MODKEY,    		            XK_g,	   spawn,          SHCMD("st -e gimp") },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
 	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
@@ -170,7 +186,7 @@ static Button buttons[] = {
 	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
 	{ ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
 	{ ClkClientWin,         MODKEY,         Button2,        togglefloating, {0} },
-	{ ClkClientWin,         MODKEY,         Button3,        resizemouse,    {0} },
+	{ ClkClientWin,         MODKEY,         Button1,        resizemouse,    {0} },
 	{ ClkTagBar,            0,              Button1,        view,           {0} },
 	{ ClkTagBar,            0,              Button3,        toggleview,     {0} },
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
