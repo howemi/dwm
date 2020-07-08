@@ -111,7 +111,7 @@ static Sp scratchpads[] = {
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
+	{ MODKEY,                       XK_p,     spawn,          {.v = dmenucmd } },
 	{ MODKEY,             		    XK_backslash, spawn,          {.v = termcmd } },
 	/* { MODKEY|ShiftMask,   		    XK_backslash, togglescratch,  {.v = scratchpadcmd } }, */
 	{ MODKEY|ShiftMask,    			XK_backslash,  	   togglescratch,  {.ui = 0 } },
