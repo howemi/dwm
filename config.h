@@ -123,6 +123,8 @@ static Key keys[] = {
 	STACKKEYS(MODKEY|ShiftMask,                push)
 	{ MODKEY,    		            XK_r,	   spawn,          SHCMD("st -e ranger") },
 	{ MODKEY,    		            XK_g,	   spawn,          SHCMD("gimp") },
+	{ MODKEY,    		            XK_u,	   spawn,          SHCMD("spotify") },
+	{ MODKEY,    		            XK_c,	   spawn,          SHCMD("slack") },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
 	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
