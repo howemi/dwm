@@ -2,7 +2,7 @@
 /* appearance */
 static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int gappx     = 20;       /* gaps between windows */
-static const unsigned int snap      = 0;        /* snap pixel */
+static const unsigned int snap      = 2;        /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=10" };
@@ -19,21 +19,27 @@ static char selbgcolor[]            = "#000000";
 /* xrdb (dwm.c) to load them into the correct variables */
 
 /* solarized colors http://ethanschoonover.com/solarized */
-static const char s_base03[]        = "#002b36";
-static const char s_base02[]        = "#073642";
-static const char s_base01[]        = "#586e75";
-static const char s_base00[]        = "#657b83";
-static const char s_base0[]         = "#839496";
-static const char s_base1[]         = "#93a1a1";
-static const char s_base2[]         = "#eee8d5";
-static const char s_base3[]         = "#fdf6e3";
+/* static const char s_base03[]        = "#002b36"; */ // Border
+/* static const char s_base02[]        = "#073642"; */ // Menu
+/* static const char s_base01[]        = "#586e75"; */
+static const char s_base03[]        = "#fc7f80"; // salmon
+static const char s_base02[]        = "#f58f90"; // darker salmon
+static const char s_base01[]        = "#ab4141"; // darkerer salmon
+static const char s_base00[]        = "#008585"; // darker teal
+static const char s_base0[]         = "#005e5e"; // teal
+static const char s_base1[]         = "#93a1a1"; // gray
+static const char s_base2[]         = "#eee8d5"; // cream
+static const char s_base3[]         = "#f0f58e"; // yellow
 
 static char *colors[][3] = {
        /*               fg           bg           border   */
-       { s_base0, s_base03, s_base2 },      /* Solarized SchemeNorm dark */
-       { s_base0, s_base02, s_base2 },      /* Solarized SchemeSel dark */
-       { s_base00, s_base3, s_base02 },     /* Solarized SchemeNorm light */
-       { s_base00, s_base2, s_base02},      /* Solarized SchemeSel light */
+       /*  text      bar     border */
+       { s_base02, s_base0, s_base02 }, // Normal
+       { s_base01, s_base00, s_base02}, // Selected
+
+       { s_base0, s_base03, s_base2 }, // Normal
+       { s_base0, s_base02, s_base2 }, // Selected
+
        { normfgcolor, normbgcolor, normbordercolor }, /* SchemeNorm orig */
        { selfgcolor,  selbgcolor,  selbordercolor  }, /* SchemeSel orig */
        /* [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor }, */
