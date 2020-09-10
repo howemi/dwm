@@ -29,13 +29,13 @@ static const char s_base00[]        = "#008585"; // darker teal
 static const char s_base0[]         = "#005e5e"; // teal
 static const char s_base1[]         = "#93a1a1"; // gray
 static const char s_base2[]         = "#eee8d5"; // cream
-static const char s_base3[]         = "#f0f58e"; // yellow
+static const char s_base3[]         = "#e9c46a"; // yellow
 
 static char *colors[][3] = {
        /*               fg           bg           border   */
        /*  text      bar     border */
        { s_base02, s_base0, s_base02 }, // Normal
-       { s_base01, s_base00, s_base02}, // Selected
+       { s_base3, s_base00, s_base02}, // Selected
 
        { s_base0, s_base03, s_base2 }, // Normal
        { s_base0, s_base02, s_base2 }, // Selected
