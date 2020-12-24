@@ -1,10 +1,10 @@
 /* See LICENSE file for copyright and license details. */
 /* appearance */
 static const unsigned int borderpx  = 0;        /* border pixel of windows */
-static const unsigned int gappx     = 20;       /* gaps between windows */
+static const unsigned int gappx     = 0;        /* gaps between windows */
 static const unsigned int snap      = 2;        /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
-static const int topbar             = 1;        /* 0 means bottom bar */
+static const int topbar             = 0;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
 
@@ -30,10 +30,18 @@ static const char s_base0[]         = "#005e5e"; // teal
 static const char s_base1[]         = "#93a1a1"; // gray
 static const char s_base2[]         = "#eee8d5"; // cream
 static const char s_base3[]         = "#e9c46a"; // yellow
+static const char s_basebl[]        = "#111111"; // black
+static const char s_baselg[]        = "#444444"; // light gray
+static const char s_basewh[]        = "#dddddd"; // white
+static const char s_basesg[]        = "#00ff7f"; // spring green
+static const char s_basely[]        = "#f5ffaa"; // light yellow
 
-static char *colors[][3] = {
+static char *colors[][4] = {
        /*               fg           bg           border   */
        /*  text      bar     border */
+       { s_basely, s_basebl, s_basebl }, // Normal
+       { s_basesg, s_basebl, s_basebl}, // Selected
+
        { s_base02, s_base0, s_base02 }, // Normal
        { s_base3, s_base00, s_base02}, // Selected
 
