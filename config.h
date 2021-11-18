@@ -40,7 +40,7 @@ static char *colors[][4] = {
        /*               fg           bg           border   */
        /*  text      bar     border */
        { s_basely, s_basebl, s_basebl }, // Normal
-       { s_basesg, s_basebl, s_basebl}, // Selected
+       { s_basesg, s_basebl, s_basely}, // Selected
 
        { s_base02, s_base0, s_base02 }, // Normal
        { s_base3, s_base00, s_base02}, // Selected
@@ -129,6 +129,7 @@ static Key keys[] = {
 	{ MODKEY,            			XK_apostrophe,	   togglescratch,  {.ui = 1 } },
 	{ MODKEY,             		    XK_w,	   spawn,          SHCMD("$BROWSER") },
 	{ MODKEY|ShiftMask,    		    XK_w,	   spawn,          SHCMD("st -e sudo nmtui") },
+	{ MODKEY|ShiftMask,    		    XK_BackSpace,spawn,        SHCMD("st -e sudo poweroff") },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	STACKKEYS(MODKEY,                          focus)
 	STACKKEYS(MODKEY|ShiftMask,                push)
@@ -161,6 +162,9 @@ static Key keys[] = {
 	{ MODKEY,                       XK_F5,     xrdb,           {.v = NULL } },
 	{ MODKEY,             		    XK_minus,  setgaps,        {.i = -1 } },
 	{ MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_minus, 		setborderpx,    {.i = -1 } },
+	{ MODKEY|ShiftMask,             XK_equal, 		setborderpx,    {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_numbersign, 	setborderpx,    {.i = 0 } },
 	{ MODKEY,                 XK_bracketright, spawn,	   SHCMD("setaudio") },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
